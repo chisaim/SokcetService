@@ -19,13 +19,14 @@ public class TimeServerHandler extends IoHandlerAdapter {
     public void messageReceived(IoSession session, Object message) throws Exception {
         String mess = message.toString();
 
-        System.out.println("message ----------->>"+mess);
+        logger.info("message ----------->>"+mess);
         Date date = new Date();
         session.write( date.toString() );
+        session.closeNow();
     }
 
     public void sessionIdle(IoSession session, IdleStatus status) throws Exception {
-        System.out.println( "IDLE " + session.getIdleCount( status ));
+        logger.info( "IDLE " + session.getIdleCount( status ));
     }
 
 }
