@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact name="service:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/service_jar</output-path>
+    <root id="root">
+      <element id="archive" name="service.jar">
+        <element id="module-output" name="service" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="Maven: log4j:log4j:1.2.7" />
+        <element id="library" level="project" name="Maven: org.apache.mina:mina-core:2.0.9" />
+        <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.9" />
+        <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.9" />
+      </element>
+      <element id="directory" name="logs" />
+    </root>
+  </artifact>
+</component>
