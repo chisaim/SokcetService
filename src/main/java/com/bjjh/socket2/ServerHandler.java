@@ -25,10 +25,6 @@ public class ServerHandler extends IoHandlerAdapter {
 //    	String retStr = (String) message;
 //    	session.write(retStr.toUpperCase());
         session.closeNow();
-        if ("end".equals(message)) {
-            session.closeNow();
-
-        }
     }
 
     @Override
